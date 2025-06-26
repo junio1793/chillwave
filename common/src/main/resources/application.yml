@@ -1,0 +1,42 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgresql-dht.smartbr.com:5432/hml_vitaverse_new
+    username: hml_vitaverse_new
+    password: hml_vitaverse_new
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      idle-timeout: 60000
+      max-lifetime: 1800000
+      connection-timeout: 30000
+
+server:
+  port: 8081
+  address: 192.168.10.52
+  servlet:
+    context-path: /
+  http2:
+    enabled: true
+  compression:
+    enabled: true
+    min-response-size: 1
+    mime-types: text/html,
+      text/xml,
+      text/plain,
+      text/css,
+      text/javascript,
+      application/javascript,
+      application/json,
+      application/xml,
+      application/pdf,
+      image/png,
+      image/jpeg,
+      image/svg+xml
+
+logging:
+  level:
+    com.zaxxer.hikari.pool.HikariPool: OFF
+    com.zaxxer.hikari.pool.PoolBase: OFF
+    com.zaxxer.hikari.HikariConfig: OFF
+    com.zaxxer.hikari.HikariDataSource: OFF

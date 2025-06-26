@@ -1,0 +1,7 @@
+spring:
+  cache:
+    type: caffeine
+
+logging:
+  level:
+    org.springframework.cache: INFO
