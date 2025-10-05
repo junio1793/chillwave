@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://postgresql-dht.smartbr.com:5432/hml_vitaverse_new
-    username: hml_vitaverse_new
-    password: hml_vitaverse_new
+    url: ***************
+    username: ************
+    password: ***********
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 10
